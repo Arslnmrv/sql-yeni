@@ -1,5 +1,5 @@
 /* ========================================================= 
-                        TABLO OLUﬁTURMA  (CRUD - Create)                  
+                        TABLO OLUSTURMA  (CRUD - Create)                  
 ============================================================*/
 CREATE TABLE student 
 (   
@@ -8,59 +8,59 @@ CREATE TABLE student
     std_age NUMBER
 );
 /* ========================================================= 
-                     VER› G›R›ﬁ› 
+                     VER√ù G√ùR√ù√û√ù 
 ===========================================================*/
 
-INSERT INTO student VALUES('1001', 'MEHMET AL›', 25);
-INSERT INTO student VALUES('1002', 'AYﬁE YILMAZ', 34);
+INSERT INTO student VALUES('1001', 'MEHMET AL√ù', 25);
+INSERT INTO student VALUES('1002', 'AY√ûE YILMAZ', 34);
 INSERT INTO student VALUES('1003', 'JOHN STAR', 56);
 INSERT INTO student VALUES('1004', 'MARY BROWN', 17);
 
 /* ========================================================= 
-                    PAR«ALI VER› G›R›ﬁ› 
+                    PAR√áALI VER√ù G√ùR√ù√û√ù 
 ===========================================================*/
--- NOT: Veri giri˛i yap˝lmayan dei˛kenlere NULL atan˝r.
+-- NOT: Veri giri√æi yap√Ωlmayan de√∞i√ækenlere NULL atan√Ωr.
 
 INSERT INTO student(std_id,std_name) VALUES('1005','MUSTAFA KARAR');
 
 /* ========================================================= 
-                    TABLODAN VER› SORGULAMA  (CRUD - Read)  
+                    TABLODAN VER√ù SORGULAMA  (CRUD - Read)  
 ===========================================================*/
 
 SELECT * FROM student;
 
 /* ========================================================= 
-                    TABLO S›LME  (CRUD - Drop )
+                    TABLO S√ùLME  (CRUD - Drop )
 ===========================================================*/
 
 DROP TABLE student;
 
 /*========================================================= 
-                         CRUD ÷RNEK  
+                         CRUD √ñRNEK  
  ===========================================================
              
- Veritaban˝m˝zda urunler ad˝nda bir Tablo olu˛tural˝m.
+ Veritaban√Ωm√Ωzda urunler ad√Ωnda bir Tablo olu√ætural√Ωm.
  urun_id  => NUMBER
- urun_ad˝ => VARCHAR2(50)
+ urun_ad√Ω => VARCHAR2(50)
  fiyat => NUMBER(5,2)
  tett => DATE,      
  stok_adedi => NUMBER(10)  
- Tabloya, ‹r¸n giri˛i yapal˝m.÷rnein C›PS, KOLA, AYRAN, B›SK‹V›,  
- (100, ëC›PSí, 5.50, ë01-05-2022í, 500)
- Verilerimizi Áekelim.
+ Tabloya, √úr√ºn giri√æi yapal√Ωm.√ñrne√∞in C√ùPS, KOLA, AYRAN, B√ùSK√úV√ù,  
+ (100, ‚ÄòC√ùPS‚Äô, 5.50, ‚Äò01-05-2022‚Äô, 500)
+ Verilerimizi √ßekelim.
  ===========================================================*/
 
 CREATE TABLE urunler
 (   
     urun_id NUMBER,
-    urun_ad˝ VARCHAR2(50),
+    urun_ad√Ω VARCHAR2(50),
     fiyat NUMBER(5,2),
     tett DATE,
     stok_adedi NUMBER(10)
 );
 
-INSERT INTO urunler VALUES(101,'C›PS',5.25,'01-05-2022', 1500);
-INSERT INTO urunler VALUES(102,'B›SK‹V›',2.50,'01-07-2024',300);
+INSERT INTO urunler VALUES(101,'C√ùPS',5.25,'01-05-2022', 1500);
+INSERT INTO urunler VALUES(102,'B√ùSK√úV√ù',2.50,'01-07-2024',300);
 INSERT INTO urunler VALUES(103,'GOFRET',1.50,'05-09-2023',120);
 INSERT INTO urunler VALUES(104,'KOLA',4.50,'21-09-2025',50);
 INSERT INTO urunler VALUES(105,'AYRAN',2.50,'01-05-2021',5);
